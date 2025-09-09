@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Bootstrap-এর bg-light এর সাথে মানানসই */
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+main.container {
+    max-width: auto;
+    margin: auto;
+    padding: auto;
+}
+
+/* Post Item Styles */
+.post-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: .375rem; /* Bootstrap-এর ডিফল্ট বর্ডার রেডিয়াস */
+}
+.post-thumbnail {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .375rem;
+}
+.post-text-content {
+    flex-grow: 1;
+}
+.post-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.post-title a {
+    color: #212529;
+}
+.post-meta {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+.post-meta span {
+    margin-right: 15px;
+}
+.post-meta i {
+    margin-right: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #eee;
+}
+
+/* Form and Details Page Styles */
+.form-container, .post-detail-content {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+.submit-btn { background: #198754; color: white; padding: 12px 18px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+.post-detail-content img { max-width: 100%; border-radius: 5px; margin-bottom: 15px; }

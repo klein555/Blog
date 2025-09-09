@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="form-container">
+    <h2>একটি নতুন পোস্ট লিখুন</h2>
+    <form action="/posts" method="POST">
+        <div class="form-group">
+            <label for="title">টাইটেল:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="author">লেখকের নাম:</label>
+            <input type="text" id="author" name="author" required>
+        </div>
+        <div class="form-group">
+            <label for="thumbnailUrl">থাম্বনেইল ইমেজ লিঙ্ক (ঐচ্ছিক):</label>
+            <input type="text" id="thumbnailUrl" name="thumbnailUrl">
+        </div>
+        <div class="form-group">
+            <label for="content">কনটেন্ট:</label>
+            <textarea id="content" name="content" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">পোস্ট করুন</button>
+    </form>
+</div>
+
+<%- include('./partials/footer.ejs') %>
